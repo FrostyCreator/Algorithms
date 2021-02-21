@@ -7,7 +7,7 @@ namespace Sorting
         public static void Sort<T>(this IList<T> collection, IComparer<T> comparer = null)
         {
             comparer ??= Comparer<T>.Default;
-            collection.SelectionSortDescending(comparer);
+            collection.SelectionSortAscending(comparer);
         }
         
         public static void SelectionSortAscending<T>(this IList<T> collection, IComparer<T> comparer)
