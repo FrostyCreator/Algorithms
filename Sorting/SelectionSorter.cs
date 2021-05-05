@@ -2,9 +2,12 @@
 
 namespace Sorting
 {
+    // Worst-case performance: О(n^2) 
+    // Best-case performance: O(n^2)
+    // Average performance: O(n^2)
     public static class SelectionSorter
     {
-        public static void Sort<T>(this IList<T> collection, IComparer<T> comparer = null)
+        public static void SelectionSort<T>(this IList<T> collection, IComparer<T> comparer = null)
         {
             comparer ??= Comparer<T>.Default;
             collection.SelectionSortAscending(comparer);
@@ -12,11 +15,9 @@ namespace Sorting
         
         public static void SelectionSortAscending<T>(this IList<T> collection, IComparer<T> comparer)
         {
-            int min;
-
             for (int i = 0; i < collection.Count; i++)
             {
-                min = i;
+                var min = i;
                 for (int j = i + 1; j < collection.Count; j++)
                 {
                     if (comparer.Compare(collection[j], collection[min]) < 0)
@@ -30,11 +31,9 @@ namespace Sorting
         }
         public static void SelectionSortDescending<T>(this IList<T> collection, IComparer<T> comparer)
         {
-            int max;
-
             for (int i = 0; i < collection.Count; i++)
             {
-                max = i;
+                var max = i;
                 for (int j = i + 1; j < collection.Count; j++)
                 {
                     if (comparer.Compare(collection[j], collection[max]) > 0)
@@ -44,12 +43,6 @@ namespace Sorting
                 }
                 collection.Swap(max, i);
             }
-        }
-        static void Swap<T>(this IList<T> collection, int a, int b)
-        {
-            T temp = collection[a];
-            collection[a] = collection[b];
-            collection[b] = temp;
         }
     }
 }

@@ -8,6 +8,19 @@ namespace Sorting.Tests
     public class SelectionSorter
     {
         [Fact]
+        public void SelectionSort()
+        {
+            var actual = new List<int>();
+            actual.AddRange(new [] {5, 3, 1, 4, 2});
+            var expected = new List<int>();
+            expected.AddRange(new [] { 1, 2, 3, 4, 5 });
+            
+            actual.SelectionSort();
+            
+            Assert.Equal(expected, actual);
+        }
+        
+        [Fact]
         public void SelectionSortAscending()
         {
             var actual = new List<int>();
