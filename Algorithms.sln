@@ -4,7 +4,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting", "Sorting\Sorting.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2BC43FCD-2D9A-4B8E-AD10-BA91897F6E6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting.Tests", "Tests\Sorting.Tests\Sorting.Tests.csproj", "{A0CCD64C-3801-4C04-A4F5-594D87F31C87}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Tests", "Tests\Algorithms.Tests\Algorithms.Tests.csproj", "{A0CCD64C-3801-4C04-A4F5-594D87F31C87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Searching", "Searching\Searching\Searching.csproj", "{F1D97368-F465-481D-8079-37C66FC406C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +22,10 @@ Global
 		{A0CCD64C-3801-4C04-A4F5-594D87F31C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0CCD64C-3801-4C04-A4F5-594D87F31C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0CCD64C-3801-4C04-A4F5-594D87F31C87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1D97368-F465-481D-8079-37C66FC406C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1D97368-F465-481D-8079-37C66FC406C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1D97368-F465-481D-8079-37C66FC406C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1D97368-F465-481D-8079-37C66FC406C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A0CCD64C-3801-4C04-A4F5-594D87F31C87} = {2BC43FCD-2D9A-4B8E-AD10-BA91897F6E6F}

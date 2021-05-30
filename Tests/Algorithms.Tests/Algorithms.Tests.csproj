@@ -4,6 +4,8 @@
         <TargetFramework>net5.0</TargetFramework>
 
         <IsPackable>false</IsPackable>
+
+        <RootNamespace>Sorting.Tests</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -20,6 +22,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\Searching\Searching\Searching.csproj" />
       <ProjectReference Include="..\..\Sorting\Sorting.csproj" />
     </ItemGroup>
 
